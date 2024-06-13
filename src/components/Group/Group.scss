@@ -1,0 +1,60 @@
+.group {
+  text-align: center;
+
+  .group__items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 700px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 460px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    h4 {
+      font-size: 15px;
+      color: var(--black);
+      font-weight: 500;
+      line-height: 20px;
+    }
+    .position {
+      font-size: 13px;
+      color: var(--gray);
+      font-weight: 500;
+      line-height: 13px;
+    }
+    .phone,
+    .email {
+      font-size: 13px;
+      color: var(--black);
+      font-weight: 500;
+      line-height: 13px;
+      margin-top: 16px;
+    }
+
+    .email {
+      margin-top: 8px;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+}

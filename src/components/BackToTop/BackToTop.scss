@@ -1,0 +1,25 @@
+.backToTop {
+  position: fixed;
+  bottom: 80px;
+  right: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--orange);
+  padding: 20px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  box-shadow: 0px 0px 26px -1px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 0px 0px 26px -1px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0px 0px 26px -1px rgba(0, 0, 0, 0.37);
+
+  &:hover {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+}
